@@ -31,6 +31,7 @@ class CategoryRoute extends StatelessWidget {
   Widget _buildCategoryWidges(List<Widget> categories) {
     return ListView.builder(
       itemBuilder: (BuildContext context, int index) => categories[index],
+      itemCount: _categoryNames.length,
     );
   }
 

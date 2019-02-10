@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 // a package import, as shown below.
 // More details at http://dart-lang.github.io/linter/lints/avoid_relative_lib_imports.html
 //import 'task_02_category_widget/category.dart';
-import 'task_03_category_route/category_route.dart'
+import 'category_route.dart';
 
 // TODO: Pass this information into your custom [Category] widget
 const _categoryName = 'Cake';
@@ -29,17 +29,17 @@ class UnitConverterApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Unit Converter',
-      home: Scaffold(
-        backgroundColor: Colors.green[100],
-        body: Center(
-          // TODO: Determine what properties you'll need to pass into the widget
-                    // child: Category(
-                    //   name: _categoryName,
-                    //   color: _categoryColor,
-                    //   iconLocation: _categoryIcon,
-                    // ),
-        ),
-      ),
+      home: CategoryRoute(),
+      // title: 'Unit Converter',
+      // home: Scaffold(
+      // backgroundColor: Colors.green[100],
+      // body: Center(
+      // TODO: Determine what properties you'll need to pass into the widget
+      // child: Category(
+      //   name: _categoryName,
+      //   color: _categoryColor,
+      //   iconLocation: _categoryIcon,
+      // ),
     );
   }
 }
